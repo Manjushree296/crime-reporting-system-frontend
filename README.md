@@ -1,74 +1,68 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Crime Reporting System - Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend** of the Crime Reporting System project, built with **React**, **React Router**, and **Bootstrap**.  
+It provides two dashboards:
+- **Citizen Dashboard**: Citizens can log in, report crimes, and track their case status.
+- **Police Dashboard**: Officers can log in, view assigned cases, investigate, or reject them with reasons.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### Citizen
+- Register & Login
+- Submit new crime reports
+- View list of submitted reports and their status
 
-### `npm start`
+### Police
+- View assigned reports
+- Mark a report as **Investigated**
+- Reject a report with a reason
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📦 Tech Stack
+- **React 18**
+- **React Router DOM v6**
+- **Bootstrap 5**
+- **Axios** for API calls
+- **JWT Authentication** (integrated with backend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## ⚙️ Installation & Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**
 
-### `npm run build`
+   git clone https://github.com/your-username/crime-reporting-frontend.git
+   cd crime-reporting-frontend
+Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
+Update Backend API URL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open src/services/api.js (or wherever you store the base API URL)
 
-### `npm run eject`
+export const API_URL = "http://localhost:8080/api";
+with your backend URL.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Start the development server
+npm start
+The app will run on http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🔑 Authentication
+Uses JWT tokens from backend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Stored in localStorage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Token is sent in Authorization: Bearer <token> header for protected routes.
 
-## Learn More
+🧪 Testing the App
+Register a new user via the Register page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Login as Citizen or Officer.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Test:
 
-### Code Splitting
+Citizen → Submit & track reports
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Police → Approve or Reject reports
+Ensure the backend is running on the port you specify in API_URL.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# crime-reporting-system-frontend
->>>>>>> a278f0fbb4b0218012af5448e18d20201475e3e5
+You must have Node.js v18+ installed.
