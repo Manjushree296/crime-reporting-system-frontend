@@ -2,7 +2,7 @@
 This is the **frontend** of the Crime Reporting System project, built with **React**, **React Router**, and **Bootstrap**.  
 It provides two dashboards:
 - **Citizen Dashboard**: Citizens can log in, report crimes, and track their case status.
-- **Police Dashboard**: Officers can log in, view assigned cases, investigate, or reject them with reasons.
+- **Police Dashboard**: Officers can log in, view assigned cases, investigate, or reject them with reasons.   
 ## 🚀 Features
 ### Citizen
 - Register & Login
