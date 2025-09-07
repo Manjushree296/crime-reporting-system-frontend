@@ -7,7 +7,7 @@ It provides two dashboards:
 ### Citizen  
 - Register & Login
 - Submit new crime reports   
-- View list of submitted reports and their status  
+- View list of submitted reports and their status   
 ### Police
 - View assigned reports
 - Mark a report as **Investigated**
