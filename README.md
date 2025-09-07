@@ -6,7 +6,7 @@ It provides two dashboards:
 ## 🚀 Features  
 ### Citizen
 - Register & Login
-- Submit new crime reports
+- Submit new crime reports   
 - View list of submitted reports and their status
 ### Police
 - View assigned reports
